@@ -1,0 +1,16 @@
+name: Exemplo
+
+on: [push]
+
+jobs:
+  Inicial:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Titulo da Tarefa
+        run: echo "Executando na VM do git"
+
+      - name: Segunda Tarefa
+        run: pwd
+
+      - name: Terceira Tarefa
+        run: whoami
